@@ -1,0 +1,27 @@
+#sentence {
+    padding: 10px;
+    background-color: white;
+    border-radius: 8px;
+    font-size: large;
+}
+#counterButton {
+    background-color: aquamarine;
+    padding: 10px;
+    margin-left: 10px;
+    border-radius: 8px;
+    font-size: large;
+}
+
+#counterButton:hover {
+    background-color: rgb(66, 202, 157);
+    cursor: pointer;
+}
+
+.counter {
+    color: white;
+    font-size: x-large;
+}
+
+.counter li {
+    list-style-type: none;
+}

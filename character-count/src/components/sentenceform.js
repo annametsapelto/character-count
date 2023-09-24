@@ -1,21 +1,20 @@
 import { useState } from "react";
 import CharacterCounter from "./characterCounter";
+import './form.css';
 
 function SentenceForm() {
 
     const [sentence, setSentence] = useState("");
-    const handleSubmit = (event) => {
-        event.preventDefault();
-    }
+
     return (
         <>
-            <form onSubmit={handleSubmit}>
+            <form>
                 <input 
                     id="sentence" 
                     type="text" 
                     placeholder="Type your sentence here" 
                     onChange={e => setSentence(e.target.value)}></input>
-                <input type="submit" value="Count characters"/>
+                <input id="counterButton" type="reset" value="Reset sentence" onClick={() => setSentence("")}/>
             </form>
             <CharacterCounter sentence={sentence}></CharacterCounter>
         </>

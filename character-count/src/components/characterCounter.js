@@ -1,4 +1,5 @@
 import { useState, useEffect } from "react";
+import './form.css';
 
 function CharacterCounter({sentence}) {
 
@@ -23,7 +24,7 @@ function CharacterCounter({sentence}) {
     }, [sentence]);
 
     return(
-        <>
+        <div className="counter">
             <p>The sentence is: {sentence}</p>
             <p>It has the following characters:</p>
             <ul>
@@ -31,7 +32,7 @@ function CharacterCounter({sentence}) {
                     <li key={item.char}>{item.char} {item.count}</li>
                 ))}
             </ul>
-        </>
+        </div>
     )
 }
 
