@@ -1,4 +1,5 @@
 import './App.css';
+import SentenceForm from './components/sentenceform';
 
 function App() {
   return (
@@ -7,6 +8,7 @@ function App() {
         <h1>Character Count App</h1>
         <p>This app can be used to count all the characters in a sentence.</p>
       </header>
+      <SentenceForm></SentenceForm>
     </div>
   );
 }
